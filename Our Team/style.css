@@ -42,8 +42,8 @@ body{
 
 
 .profile .profile-img{
-    height: 20em;
-    width: 20em;
+    height: 270px;
+    width: 270px;
     border-radius: 50%;
     filter: grayscale(50%);
     cursor: pointer;
