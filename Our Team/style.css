@@ -2,12 +2,13 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: Fira Code;
+    font-family: "Fira Code";
 }
 
 body{
     background: #1B1D27;
     text-align: center;
+    font-family: "Fira Code"
 }
 
 .container{
