@@ -3,10 +3,29 @@
     src: url("https://engrafa.github.io/Fonts/Roboto/Roboto-Thin.ttf");
 }
 
+@font-face {
+    font-family: "Roboto";
+    src: url("https://engrafa.github.io/Fonts/Roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "RobotoLight";
+    src: url("https://engrafa.github.io/Fonts/Roboto/Roboto-Light.ttf");
+}
+
+
 body{
     background: #1B1D27;
     text-align: center;
     font-family: "RobotoThin"
+}
+
+h4{
+    font-family: 'RobotoLight';
+}
+
+p{
+    font-family: 'RobotoLight';
 }
 
 .container{
