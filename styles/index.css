@@ -18,6 +18,10 @@
     src: url("https://engrafa.github.io/Fonts/Roboto/Roboto-Medium.ttf");
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     font-family: "RobotoLight";
     background-color: #1B1D27;
@@ -33,10 +37,6 @@ h4{
 
 h3{
     margin: 1em;
-}
-
-img{
-    border-radius: 5px;
 }
 
 header{
@@ -63,12 +63,12 @@ header{
 .article_box{
     background-color: #26283d81;
     padding: 2em 2em 2em 2em;
-    border-radius: 5px;
     padding-top: 1em;
-    transition: all 500ms;
+    transition: all 400ms;
     text-align: center;
+    box-shadow: 5px 7px #0c0d1379;
 }
 
 .article_box:hover{
-    box-shadow: 0 0 0.5em #7e86cb;
+    box-shadow: 2px 4px #0c0d13bb;
 }
