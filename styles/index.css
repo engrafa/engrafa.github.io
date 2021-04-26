@@ -26,7 +26,7 @@ body{
     font-family: "RobotoLight";
     background-color: #1B1D27;
     color: #9DEFFF;
-     margin: 0px;
+    margin: 0px;
     padding: 0px;
 }
 
@@ -54,8 +54,8 @@ header{
     margin: 1em;
     display: grid;
     gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-columns: repeat(3, minmax(10em, 1fr));
+    /* grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(10em, 1fr)); */
     grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
     grid-auto-rows: minmax(15em, 1fr);
 }
@@ -71,4 +71,35 @@ header{
 
 .article_box:hover{
     box-shadow: 2px 4px #0c0d13bb;
+}
+
+.head{
+    font-family: "Roboto";
+    text-align: center;
+    font-size: 2rem;
+}
+
+@media only screen and (max-width: 1000px){
+
+    .articles_intro{
+        grid-template-columns: auto;
+        grid-auto-rows:auto;
+    }
+
+    img{
+        height: 25em;
+        width: 25em;
+    }
+
+    h4{
+        font-size: 3em;
+    }
+
+    h3{
+        font-size: 3rem;
+    }
+
+    .head{
+        font-size: 3rem;
+    }
 }
