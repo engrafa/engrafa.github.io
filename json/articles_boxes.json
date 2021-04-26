@@ -1,0 +1,14 @@
+{
+    "articles":[
+        {
+            "id": 1,
+            "name": "lorem ipsum",
+            "url": "idk"
+        },
+        {
+            "id": 2,
+            "name": "lorem ipsum",
+            "url": "idk"
+        }
+    ]
+}

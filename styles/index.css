@@ -26,6 +26,19 @@ body{
     padding: 0px;
 }
 
+h4{
+    margin: 0.5em;
+    font-family: 'Roboto';
+}
+
+h3{
+    margin: 1em;
+}
+
+img{
+    border-radius: 5px;
+}
+
 header{
     background-color: #1b1c27c7;
 	z-index: 100;
@@ -35,4 +48,27 @@ header{
     padding-top: 1em;
 	position: sticky;
 	top: 0px;
+}
+
+.articles_intro{
+    margin: 1em;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, minmax(10em, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    grid-auto-rows: minmax(15em, 1fr);
+}
+
+.article_box{
+    background-color: #26283d81;
+    padding: 2em 2em 2em 2em;
+    border-radius: 5px;
+    padding-top: 1em;
+    transition: all 500ms;
+    text-align: center;
+}
+
+.article_box:hover{
+    box-shadow: 0 0 0.5em #7e86cb;
 }
