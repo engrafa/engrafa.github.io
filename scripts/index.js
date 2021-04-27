@@ -26,7 +26,7 @@ function requestMarkdownArticles(username = "", repo = ""){
             console.log("name:", data[i].name)
             console.log("url:", data[i].download_url)
             let articleGrid = document.getElementById("articleGrid");
-            articleGrid.innerHTML = articleGrid.innerHTML + `<div class="article_box" onclick='window.open("${data[i].html_url}", "_blank");'><h4>${data[i].name}</h4><img src="https://picsum.photos/200"></div>`;
+            articleGrid.innerHTML = articleGrid.innerHTML + `<div class="article_box" onclick='window.open("./markdown/${data[i].name}", "_blank");'><h4>${data[i].name}</h4><img src="https://picsum.photos/200"></div>`;
         }
     }
 
