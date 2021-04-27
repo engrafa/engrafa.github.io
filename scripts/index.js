@@ -22,11 +22,16 @@ function requestMarkdownArticles(username = "", repo = ""){
         // Log the response
         console.log(data);
 
+        a = 1;
+
         for (let i in data){
             console.log("name:", data[i].name)
             console.log("url:", data[i].download_url)
             let articleGrid = document.getElementById("articleGrid");
+            if (a >= 4){
             articleGrid.innerHTML = articleGrid.innerHTML + `<div class="article_box" onclick='window.open("${data[i].html_url}", "_blank");'><h4>${data[i].name}</h4><img src="https://picsum.photos/200"></div>`;
+            }
+            a = a + 1;
         }
     }
 
