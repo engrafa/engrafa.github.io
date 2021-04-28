@@ -8,8 +8,6 @@ if (String(article) != ''){
 }
 
 function viewArticle(url){
-    // If you use require (Node etc), require as first the module and then create the instance
-    var Remarkable = require('remarkable');
     // If you're in the browser, the Remarkable class is already available in the window
     var md = new Remarkable();
 
