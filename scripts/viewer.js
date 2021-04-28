@@ -15,8 +15,7 @@ function viewArticle(url, element = 'content'){
 
     xhr.onload = function() {
         const data = this.response
-        document.getElementById(element).innerHTML = marked();
-
+        document.getElementById(element).innerHTML = marked(data.text());
     }
 
     xhr.send();
