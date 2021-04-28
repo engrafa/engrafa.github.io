@@ -1,0 +1,13 @@
+a {
+    color: #bcd9df;
+}
+
+a :active{
+    color: #6b898f;
+}
+
+.md_viewer{
+    display: block;
+    margin-left: 5%;
+    margin-right: 5%;
+}
