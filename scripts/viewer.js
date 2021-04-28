@@ -2,6 +2,8 @@ const queryString = window.location.search
 const urlParams = new URLSearchParams(queryString)
 const article = urlParams.get('article')
 
+document.getElementById('content').innerHTML = marked('# Marked in the browser\n\nRendered by **marked**.');
+
 if (String(article) != ''){
     const mdUrl = `https://raw.githubusercontent.com/engrafa/markdown/main/${article}`
     viewArticle(mdUrl)
