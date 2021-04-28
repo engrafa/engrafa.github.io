@@ -25,6 +25,7 @@ html{
 body{
     font-family: "RobotoLight";
     background-color: #1B1D27;
+    background-size: cover;
     color: #9DEFFF;
     margin: 0px;
     padding: 0px;
