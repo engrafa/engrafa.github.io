@@ -6,7 +6,7 @@ document.getElementById('content').innerHTML = marked('# Marked in the browser\n
 
 if (String(article) != ''){
     const mdUrl = `https://raw.githubusercontent.com/engrafa/markdown/main/${article}`
-    viewArticle(mdUrl)
+    // viewArticle(mdUrl)
 }
 
 function viewArticle(url){
