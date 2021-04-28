@@ -5,6 +5,20 @@ let temp = null;
 
 let articleJson = null;
 
+/*
+const queryString = window.location.search
+const urlParams = new URLSearchParams(queryString)
+const article = urlParams.get('article')
+
+if (String(article) != ''){
+    const mdUrl = `https://raw.githubusercontent.com/engrafa/markdown/main/${article}`
+
+}
+
+function viewArticle(){
+    
+}
+*/
 
 function requestMarkdownArticles(username = "", repo = ""){
 
@@ -17,17 +31,17 @@ function requestMarkdownArticles(username = "", repo = ""){
     xhr.onload = function() {
     
         // Parse API data into JSON
-        const data = JSON.parse(this.response);
+        const data = JSON.parse(this.response)
         
         // Log the response
-        console.log(data);
+        console.log(data)
 
         a = 1;
 
         for (let i in data){
             console.log("name:", data[i].name)
             console.log("url:", data[i].download_url)
-            let articleGrid = document.getElementById("articleGrid");
+            let articleGrid = document.getElementById("articleGrid")
             if (a >= 4){
             articleGrid.innerHTML = articleGrid.innerHTML + `<div class="article_box" onclick='window.open("${data[i].html_url}", "_blank");'><h4>${data[i].name}</h4><img src="https://picsum.photos/200"></div>`;
             }
