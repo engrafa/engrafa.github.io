@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: "FiraSans-Regular";
     src: url("Fonts/Fira_Sans/FiraSans-Regular.ttf");
 }
@@ -21,7 +21,7 @@
 @font-face {
     font-family: "FiraSans-Medium";
     src: url("Fonts/Fira_Sans/FiraSans-Medium.ttf");
-}
+} */
 
 @font-face {
     font-family: "FiraCode";
@@ -40,10 +40,14 @@ header{
     text-align: center;
 }
 
+.head{
+    font-size: 1rem;
+}
+
 .md_viewer{
     border-radius: 5px;
-    background-color: #282a36;
-    color: #f8f8f2;
+    /* background-color: #282a36;
+    color: #f8f8f2; */
     text-align: justify;
     display: block;
     margin-left: 3%;
@@ -53,8 +57,8 @@ header{
 
 .contributors{
     border-radius: 5px;
-    background-color: #282a36;
-    color: #f8f8f2;
+    /* background-color: #282a36;
+    color: #f8f8f2; */
     text-align: justify;
     display: block;
     margin-left: 3%;
@@ -62,48 +66,48 @@ header{
     padding: 2%;
 }
 
-body{
+/* body{
     font-family: "FiraSans-Regular";
-}
+} */
 
 h1{
     font-size: 3rem;
-    font-family: "FiraSans-Black";
+    /* font-family: "FiraSans-Black"; */
     text-align: center;
 }
 
 h2{
     font-size: 3rem;
-    font-family: "FiraSans-Black";
+    /* font-family: "FiraSans-Black"; */
     text-align: center;
 }
 
 h3{
     font-size: 2em;
-    font-family: "FiraSans-ExtraBold";
+    /* font-family: "FiraSans-ExtraBold"; */
 }
 
 h4{
     margin: auto;
     font-size: 1.5em;
-    font-family: "FiraSans-Bold";
+    /* font-family: "FiraSans-Bold"; */
 }
 
 strong{
     font-size: 1em;
-    font-family: "FiraSans-Medium";
+    /* font-family: "FiraSans-Medium"; */
 }
 
-code{
+/* code{
     font-family: "FiraCode";
     font-size: 0.75em;
     padding: 0.15em;
     padding-left: 0.2em;
     padding-right: 0.2em;
     border-radius: 5px;
-    background-color: rgb(27, 29, 39);
+    /* background-color: rgb(27, 29, 39);
     color: #f8f8f2;
-}
+} */
 
 @media only screen and (max-width: 1000px){
 

@@ -41,7 +41,7 @@ h3{
 }
 
 header{
-    background-color: #1b1c27c7;
+    background-color: #1b1c27;
 	z-index: 100;
 	text-align: right;
 	padding-right: 3em;
@@ -75,14 +75,13 @@ header{
 }
 
 .head{
-    font-family: "Roboto";
+    /* font-family: "Roboto"; */
     text-align: center;
-    font-size: 2rem;
+    font-size: 1rem;
     width: fit-content;
     padding: 0;
     min-width: 90vw;
     margin: 0;
-
 }
 
 
