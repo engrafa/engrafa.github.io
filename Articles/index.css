@@ -1,3 +1,33 @@
+@font-face {
+    font-family: "FiraSans-Regular";
+    src: url("Fonts/Fira_Sans/FiraSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "FiraSans-Bold";
+    src: url("Fonts/Fira_Sans/FiraSans-Bold.ttf");
+}
+
+@font-face{
+    font-family: "FiraSans-Black";
+    src: url("Fonts/Fira_Sans/FiraSans-Black.ttf")
+}
+
+@font-face {
+    font-family: "FiraSans-ExtraBold";
+    src: url("Fonts/Fira_Sans/FiraSans-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "FiraSans-Medium";
+    src: url("Fonts/Fira_Sans/FiraSans-Medium.ttf");
+}
+
+@font-face {
+    font-family: "FiraCode";
+    src: url("Fonts/Fira_Code/FiraCode-VariableFont_wght.ttf");
+}
+
 a {
     color: #bcd9df;
 }
@@ -6,8 +36,100 @@ a :active{
     color: #6b898f;
 }
 
+header{
+    text-align: center;
+}
+
 .md_viewer{
+    border-radius: 5px;
+    background-color: #282a36;
+    color: #f8f8f2;
+    text-align: justify;
     display: block;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 2%;
+}
+
+.contributors{
+    border-radius: 5px;
+    background-color: #282a36;
+    color: #f8f8f2;
+    text-align: justify;
+    display: block;
+    margin-left: 3%;
+    margin-right: 3%;
+    padding: 2%;
+}
+
+body{
+    font-family: "FiraSans-Regular";
+}
+
+h1{
+    font-size: 3rem;
+    font-family: "FiraSans-Black";
+    text-align: center;
+}
+
+h2{
+    font-size: 3rem;
+    font-family: "FiraSans-Black";
+    text-align: center;
+}
+
+h3{
+    font-size: 2em;
+    font-family: "FiraSans-ExtraBold";
+}
+
+h4{
+    margin: auto;
+    font-size: 1.5em;
+    font-family: "FiraSans-Bold";
+}
+
+strong{
+    font-size: 1em;
+    font-family: "FiraSans-Medium";
+}
+
+code{
+    font-family: "FiraCode";
+    font-size: 0.75em;
+    padding: 0.15em;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    border-radius: 5px;
+    background-color: rgb(27, 29, 39);
+    color: #f8f8f2;
+}
+
+@media only screen and (max-width: 1000px){
+
+    h2{
+        font-size: 3em;
+        text-align: center;
+    }
+
+    h3{
+        font-size: 2em;
+        text-align: center;
+    }
+
+    h4{
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    h5{
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    body{
+        font-size: 3em;
+        word-wrap: break-word;
+    }
+
 }
