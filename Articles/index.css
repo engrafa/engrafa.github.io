@@ -42,7 +42,7 @@ header{
 }
 
 .head{
-    font-size: 1rem;
+    font-size: 0.5em;
 }
 
 .md_viewer{
@@ -69,26 +69,26 @@ header{
 
 body{
     word-wrap: break-word;
-    line-height: 2em;
+    /* line-height: 2em; */
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 3em;
     /* font-family: "FiraSans-Black"; */
     text-align: center;
     margin: 1em
 }
 
 h2{
-    font-size: 3rem;
+    font-size: 2.8em;
     /* font-family: "FiraSans-Black"; */
-    margin: 0.7em;
+    margin: 1em;
     margin-left:auto;
 }
 
 h3{
     margin-bottom: 0.7em;
-    margin-top: 0.7em;
+    margin-top: 1em;
     font-size: 2em;
     /* font-family: "FiraSans-ExtraBold"; */
 }
@@ -120,13 +120,13 @@ strong{
 @media only screen and (max-width: 1000px){
 
     h1{
-        font-size: 1em;
+        font-size: 2em;
+        /* line-height: 90px; */
     }
 
     body{
         font-size: 3em;
         word-wrap:break-word;
-        word-spacing: 10px;
     }
 
 }
