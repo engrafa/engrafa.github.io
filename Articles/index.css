@@ -117,16 +117,47 @@ strong{
     color: #f8f8f2;
 } */
 
+
 @media only screen and (max-width: 1000px){
 
     h1{
         font-size: 2em;
+        margin: 1em
         /* line-height: 90px; */
     }
 
+    h2{
+        font-size: 1.3em;
+    }
+
+    h3,
+    h4,
+    h5,
+    h6{
+        font-size: 1em;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5,
+    h6{
+        text-align: left;
+        line-height: 100px;
+    }
+
+    .headt{
+        text-align: center;
+        font-size: 2em;
+    }
+
     body{
-        font-size: 3em;
-        word-wrap:break-word;
+        font-size: 2em;
+        word-wrap:normal;
+    }
+
+    code{
+        font-size: 0.9em;
     }
 
 }
