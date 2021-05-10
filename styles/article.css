@@ -45,6 +45,12 @@ header{
     font-size: 0.5em;
 }
 
+.headt{
+    margin: auto;
+    text-align: center;
+    font-size: 2em;
+}
+
 .md_viewer{
     border-radius: 5px;
     /* background-color: #282a36;
@@ -116,7 +122,6 @@ strong{
     /* background-color: rgb(27, 29, 39);
     color: #f8f8f2;
 } */
-
 
 @media only screen and (max-width: 1000px){
 
