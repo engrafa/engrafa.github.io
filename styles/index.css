@@ -42,13 +42,13 @@ h3{
 
 header{
     background-color: #1b1c27;
-	z-index: 100;
-	text-align: right;
-	padding-right: 3em;
+    z-index: 100;
+    text-align: right;
+    padding-right: 3em;
     padding-bottom: 1em;
     padding-top: 1em;
-	position: sticky;
-	top: 0px;
+    position: sticky;
+    top: 0px;
 }
 
 .articles_intro{

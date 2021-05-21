@@ -2,12 +2,7 @@
     font-family: "FiraSans-Regular";
     src: url("Fonts/Fira_Sans/FiraSans-Regular.ttf");
 }
-*/
-@font-face {
-    font-family: "FiraSans-Bold";
-    src: url("Fonts/Fira_Sans/FiraSans-Bold.ttf");
-}
-/*
+
 @font-face{
     font-family: "FiraSans-Black";
     src: url("Fonts/Fira_Sans/FiraSans-Black.ttf")
@@ -25,7 +20,26 @@
 
 @font-face {
     font-family: "FiraCode";
-    src: url("Fonts/Fira_Code/FiraCode-VariableFont_wght.ttf");
+    src: url("../Fonts/Fira_Code/FiraCode-VariableFont_wght.ttf");
+}
+
+@font-face{
+   font-family: "Roboto";
+   src: url("../Fonts/Roboto/Roboto-Regular.ttf")
+}
+
+@font-face{
+    font-family: "Roboto Medium";
+    src: url("../Fonts/Roboto/Roboto-Medium.ttf")
+}
+
+@font-face{
+    font-family: "Roboto Bold";
+    src: url("../Fonts/Roboto/Roboto-Bold.ttf")
+}
+
+html{
+    font-family: "Roboto"
 }
 
 a {
@@ -39,6 +53,12 @@ a :active{
 header{
     text-align: center;
     padding: 0.1em;
+}
+
+pre{
+    border: 1px solid #b48ead;
+    background-color: #2e3440;
+    border-radius: 5px;
 }
 
 .head{
@@ -76,40 +96,64 @@ header{
 body{
     word-wrap: break-word;
     /* line-height: 2em; */
+    background-color: #3b4252;
+    color: #eceff4;
 }
 
 h1{
     font-size: 3em;
-    /* font-family: "FiraSans-Black"; */
+    font-family: "Roboto Bold";
     text-align: center;
-    margin: 1em
+    margin: 1em;
+    color: #88c0d0;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: "Roboto Medium"
 }
 
 h2{
     font-size: 2.8em;
     /* font-family: "FiraSans-Black"; */
-    margin: 1em;
+    margin: 0.3em;
     margin-left:auto;
+    color: #81a1c1
 }
 
 h3{
-    margin-bottom: 0.7em;
+    margin-bottom: 0.5em;
     margin-top: 1em;
     font-size: 2em;
+    color: #8fbcbb;
     /* font-family: "FiraSans-ExtraBold"; */
 }
 
-h4{
-    margin-bottom: 0.7em;
-    margin-top: 0.7em;
+h4,
+h5,
+h6{
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
     margin: auto;
     font-size: 1.5em;
+    color: #5e81ac;
     /* font-family: "FiraSans-Bold"; */
 }
 
 strong{
     font-size: 1em;
     /* font-family: "FiraSans-Medium"; */
+}
+
+pre code{
+    background: #2e3440
+}
+
+code{
+    font-family: "Fira Code";
 }
 
 /* code{
