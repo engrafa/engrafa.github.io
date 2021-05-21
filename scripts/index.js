@@ -40,7 +40,7 @@ function requestMarkdownArticles(username = "", repo = ""){
             console.log("name:", data[i].name)
             console.log("url:", data[i].download_url)
             let articleGrid = document.getElementById("articleGrid")
-            articleGrid.innerHTML = articleGrid.innerHTML + `<a style="margin: 2px" href="./Articles/index.html?article=${data[i].name}" target="_blank"><h4>${data[i].name}</h4></a>`;
+            articleGrid.innerHTML = articleGrid.innerHTML + `<a style="margin: 2px" href="./c/index.html?c=${data[i].name}" target="_blank"><h4>${data[i].name}</h4></a>`;
         }
     }
 
