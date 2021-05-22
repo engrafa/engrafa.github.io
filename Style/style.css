@@ -71,11 +71,11 @@ html{
     object-fit: cover;
 }
 .card-text{
-    color: var(--fg);
+    color: var(--fg1);
 }
 
 .card-details{
-    color: var(--fg);
+    color: var(--fg1);
     margin-top: 1rem;
 }
 .cardc{
