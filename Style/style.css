@@ -4,15 +4,16 @@
 }
 :root{
     --main: #9DEFFF;
-    --bg: #1B1D27;
-    --bg1: #ffffff;
-    --fg: #1b1d27;
-    --fg1: #ffffff;
+    --bg: #2E3440;
+    --bg1: #3B4252;
+    --fg: #4B566A;
+    --fg1: #D8DEE9;
 }
 *{
     margin: 0px;
     padding: 0px;
     font-family: Roboto;
+    text-align: center;
 }
 h1{
     color: var(--fg);
