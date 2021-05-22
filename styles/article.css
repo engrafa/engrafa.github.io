@@ -1,42 +1,4 @@
-/* @font-face {
-    font-family: "FiraSans-Regular";
-    src: url("Fonts/Fira_Sans/FiraSans-Regular.ttf");
-}
-
-@font-face{
-    font-family: "FiraSans-Black";
-    src: url("Fonts/Fira_Sans/FiraSans-Black.ttf")
-}
-
-@font-face {
-    font-family: "FiraSans-ExtraBold";
-    src: url("Fonts/Fira_Sans/FiraSans-ExtraBold.ttf");
-}
-
-@font-face {
-    font-family: "FiraSans-Medium";
-    src: url("Fonts/Fira_Sans/FiraSans-Medium.ttf");
-} */
-
-@font-face {
-    font-family: "FiraCode";
-    src: url("../Fonts/Fira_Code/FiraCode-VariableFont_wght.ttf");
-}
-
-@font-face{
-   font-family: "Roboto";
-   src: url("../Fonts/Roboto/Roboto-Regular.ttf")
-}
-
-@font-face{
-    font-family: "Roboto Medium";
-    src: url("../Fonts/Roboto/Roboto-Medium.ttf")
-}
-
-@font-face{
-    font-family: "Roboto Bold";
-    src: url("../Fonts/Roboto/Roboto-Bold.ttf")
-}
+@import url("./global_fonts.css")
 
 html{
     font-family: "Roboto"
