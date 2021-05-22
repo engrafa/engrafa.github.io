@@ -1,7 +1,5 @@
-@font-face {
-    font-family: Roboto;
-    src: url(../Static/Fonts/Roboto/Roboto-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 :root{
     --main: #9DEFFF;
     --bg: #2E3440;
@@ -12,7 +10,7 @@
 *{
     margin: 0px;
     padding: 0px;
-    font-family: Roboto;
+    font-family: 'Roboto', sans-serif;
     text-align: center;
 }
 h1{
