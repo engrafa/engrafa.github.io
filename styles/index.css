@@ -1,3 +1,7 @@
+@import url("nord.css");
+@import url("card.css");
+
+
 @font-face {
     font-family: "RobotoThin";
     src: url("https://engrafa.github.io/Fonts/Roboto/Roboto-Thin.ttf");
@@ -24,11 +28,11 @@ html{
 
 body{
     font-family: "RobotoLight";
-    background-color: #1B1D27;
+    background-color: #2e3440;
     background-size: cover;
-    color: #9DEFFF;
+    color: #b48ead;
     margin: 0px;
-    padding: 0px;
+    padding-top: 2rem;
 }
 
 h4{
@@ -62,10 +66,18 @@ header{
     /* grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
     grid-auto-rows: minmax(15em, 1fr); */
 }
-
-a{
-    color:#9DEFFF;
+a {
+    color: #eceff4;
     text-decoration:none;
+}
+
+a:hover{
+    color: #bf616a;
+    text-decoration: none;
+}
+
+a:active{
+    color: #d8dee9;
 }
 
 /* .article_box{

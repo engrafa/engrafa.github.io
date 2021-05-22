@@ -1,6 +1,6 @@
 const queryString = window.location.search
 const urlParams = new URLSearchParams(queryString)
-const article = urlParams.get('article')
+const article = urlParams.get('a')
 
 
 if (String(article) != ''){

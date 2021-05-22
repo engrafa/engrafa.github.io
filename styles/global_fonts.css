@@ -1,0 +1,30 @@
+
+@font-face {
+    font-family: "FiraCode";
+    src: url("../Fonts/Fira_Code/FiraCode-VariableFont_wght.ttf");
+}
+
+@font-face{
+   font-family: "Roboto";
+   src: url("../Fonts/Roboto/Roboto-Regular.ttf")
+}
+
+@font-face{
+    font-family: "Roboto Medium";
+    src: url("../Fonts/Roboto/Roboto-Medium.ttf")
+}
+
+@font-face{
+    font-family: "Roboto Bold";
+    src: url("../Fonts/Roboto/Roboto-Bold.ttf")
+}
+
+@font-face{
+	font-family: "Rubik";
+	src: url("../Fonts/Rubik/Rubik.ttf")
+}
+
+@font-face{
+	font-family: "Lovelo";
+	src: url("../Fonts/lovelo/Lovelo-Black.otf");
+}
