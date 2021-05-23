@@ -62,7 +62,8 @@ function requestMarkdownArticles(username = "", repo = "", folder=""){
           let articleGrid = document.getElementById("card-deck")
           articleGrid.innerHTML = articleGrid.innerHTML + getHtml(desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at lacus ipsum.",
                                                                   "unknown",
-                                                                  name);
+                                                                  name,
+	  							`../a/index.html?a=${folder}/${data[i].name}`);
       }
   }
 
@@ -89,7 +90,7 @@ function requestMarkdownCategories(username = "", repo = ""){
       for (let i in data){
           let name = data[i].name
           console.log("name:", name)
-          requestMarkdownArticles("engrafa", "markdown", name, `../a/index.html?a=${data[i].download_url}`);
+          requestMarkdownArticles("engrafa", "markdown", name);
       }
   }
 
