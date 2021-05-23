@@ -1,4 +1,4 @@
-@import url("./global_fonts.css")
+@import url("./global_fonts.css");
 
 html{
     font-family: "Roboto"
@@ -23,6 +23,10 @@ pre{
     border-radius: 5px;
 }
 
+body{
+    text-align: justify;
+}
+
 .head{
     font-size: 0.5em;
 }
@@ -42,6 +46,10 @@ pre{
     margin-left: 3%;
     margin-right: 3%;
     padding: 2%;
+}
+
+p{
+    text-align: justify;
 }
 
 .contributors{
@@ -75,7 +83,8 @@ h3,
 h4,
 h5,
 h6{
-    font-family: "Roboto Medium"
+    font-family: "Roboto Medium";
+    text-align: justify;
 }
 
 h2{

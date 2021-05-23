@@ -1,6 +1,4 @@
 @import url("nord.css");
-@import url("card.css");
-
 
 @font-face {
     font-family: "RobotoThin";
@@ -33,6 +31,10 @@ body{
     color: #b48ead;
     margin: 0px;
     padding-top: 2rem;
+}
+
+h1{
+	font-family: 'Roboto-Medium';
 }
 
 h4{

@@ -23,8 +23,8 @@ function viewArticle(){
 function getHtml(desc="Lorem ipsum dolor sit amet, consectetur a dipiscing elit. In at lacus ipsum.", author="unknown", title="Lorem Ipsum", onClickUrl=""){
 
   let html = `
-            <div class="card-item">
-             <div class="card" onclick='window.open("${onClickUrl}")'>
+            <div class="card-item" onclick='window.open("${onClickUrl}")'>
+             <div class="card" >
                 <div class="cardc">
                   <h1 class="card-txt">${title}</h1>
                   <p class="card-details">${desc}</p>
@@ -63,7 +63,7 @@ function requestMarkdownArticles(username = "", repo = "", folder=""){
           articleGrid.innerHTML = articleGrid.innerHTML + getHtml(desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at lacus ipsum.",
                                                                   "unknown",
                                                                   name,
-	  							`../a/index.html?a=${folder}/${data[i].name}`);
+	  							`./a/index.html?a=${folder}/${data[i].name}`);
       }
   }
 
