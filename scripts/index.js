@@ -20,11 +20,11 @@ function viewArticle(){
 }
 */
 
-function getHtml(desc="Lorem ipsum dolor sit amet, consectetur a dipiscing elit. In at lacus ipsum.", author="unknown", title="Lorem Ipsum"){
+function getHtml(desc="Lorem ipsum dolor sit amet, consectetur a dipiscing elit. In at lacus ipsum.", author="unknown", title="Lorem Ipsum", onClickUrl=""){
 
   let html = `
             <div class="card-item">
-             <div class="card">
+             <div class="card" onclick='window.open("${onClickUrl}")'>
                 <div class="cardc">
                   <h1 class="card-txt">${title}</h1>
                   <p class="card-details">${desc}</p>
@@ -89,7 +89,7 @@ function requestMarkdownCategories(username = "", repo = ""){
       for (let i in data){
           let name = data[i].name
           console.log("name:", name)
-          requestMarkdownArticles("engrafa", "markdown", name);
+          requestMarkdownArticles("engrafa", "markdown", name, `../a/index.html?a=${data[i].download_url}`);
       }
   }
 

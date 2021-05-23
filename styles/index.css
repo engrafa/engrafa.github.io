@@ -106,7 +106,8 @@ nav {
 	font-family: 'Montserrat', sans-serif;
 	padding: 0 5%;
 	height: 50px;
-	background-color: #3e65da;
+	background-color: #4c566a;
+	margin-bottom: 1em;
 }
 nav .logo {
 	float: left;
@@ -115,7 +116,7 @@ nav .logo {
 	display: flex;
 	align-items: center;
 	font-size: 24px;
-	color: #FFF;
+	color: #e4ecf7;
 }
 nav .links {
 	float: right;
@@ -152,7 +153,7 @@ nav .icon-burger {
 nav .icon-burger .line {
 	width: 30px;
 	height: 5px;
-	background-color: #fff;
+	background-color: #e4ecf7;
 	margin: 5px;
 	border-radius: 3px;
 	transition: all .3s ease-in-out;

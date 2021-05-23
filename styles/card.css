@@ -29,15 +29,16 @@ html{
     padding: 2rem;
     display: grid;
     grid-gap: 3rem;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(21em, 1fr));
     align-items: center;
 
 }
 
 .card-item{
+    padding: 2rem;
     position: relative;
     background-color: var(--bg);
-    height: 15rem;
+    height: 14rem;
     /* border-radius: 5px; */
     word-wrap: break-word;
     /* box-shadow: 0rem 0rem 0.3rem rgba(0,0,0,1); */
@@ -58,7 +59,6 @@ html{
     object-fit: cover;
 }
 .card-txt{
-    padding-top: 1em;
     color: var(--main-fg);
 }
 
@@ -68,8 +68,6 @@ html{
     font-family: "Rubik";
     font-weight: 300;
     text-align: justify;
-    padding: 1em;
-    padding-left: 2em;
 }
 
 .card-author{
