@@ -25,20 +25,19 @@ html{
 }
 
 .card-deck{
-    min-height: 100vh;
+    margin-top: 2rem;
     padding: 2rem;
     display: grid;
     grid-gap: 3rem;
     grid-template-columns: repeat(auto-fit, minmax(21em, 1fr));
     align-items: center;
-
 }
 
 .card-item{
     padding: 2rem;
     position: relative;
     background-color: var(--bg);
-    height: 14rem;
+    height: 10rem;
     /* border-radius: 5px; */
     word-wrap: break-word;
     /* box-shadow: 0rem 0rem 0.3rem rgba(0,0,0,1); */
