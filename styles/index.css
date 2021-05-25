@@ -82,6 +82,21 @@ a:active{
     color: #d8dee9;
 }
 
+.nav-a {
+    color: #eceff4;
+    text-decoration:none;
+}
+
+.nav-a {
+    color: #bf616a;
+    text-decoration: none;
+}
+
+.nav-a {
+    color: #d8dee9;
+}
+
+
 /* .article_box{
     background-color: #26283d81;
     padding: 2em;
@@ -143,7 +158,7 @@ nav .links a {
 }
 #nav-toggle {
 	position: absolute;
-	top: -100px;
+	top: -50px;
 }
 nav .icon-burger {
 	display: none;
@@ -198,7 +213,7 @@ nav .icon-burger .line {
     } */
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
 	nav .logo {
 		float: none;
 		width: auto;
@@ -210,7 +225,7 @@ nav .icon-burger .line {
 		z-index: 9;
 		left: 0;
 		right: 0;
-		top: 100px;
+		top: 50px;
 		bottom: 100%;
 		width: auto;
 		height: auto;

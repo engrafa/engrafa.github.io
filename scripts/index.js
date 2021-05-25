@@ -1,24 +1,5 @@
 // Grab MD info Json from => https://api.github.com/repos/engrafa/markdown/contents/
-// console.log("built by ACuteWoof lol 🤣");
-
-let temp = null;
-
-let articleJson = null;
-
-/*
-const queryString = window.location.search
-const urlParams = new URLSearchParams(queryString)
-const article = urlParams.get('article')
-
-if (String(article) != ''){
-    const mdUrl = `https://raw.githubusercontent.com/engrafa/markdown/main/${article}`
-
-}
-
-function viewArticle(){
-    
-}
-*/
+console.log("script built by ACuteWoof lol 🤣");
 
 function getHtml(desc="Lorem ipsum dolor sit amet, consectetur a dipiscing elit. In at lacus ipsum.", author="unknown", title="Lorem Ipsum", onClickUrl=""){
 
@@ -35,7 +16,7 @@ function getHtml(desc="Lorem ipsum dolor sit amet, consectetur a dipiscing elit.
               </div>
             </div>
   `
-  return html
+  return html;
 
 }
 
@@ -50,20 +31,22 @@ function requestMarkdownArticles(username = "", repo = "", folder=""){
   xhr.onload = function() {
 
       // Parse API data into JSON
-      const data = JSON.parse(this.response)
+      const data = JSON.parse(this.response);
 
       // Log the response
-      console.log(data)
+      console.log(data);
+      let articleGrid = document.getElementById("card-deck");
+
+      articleGrid.innerHTML = articleGrid.innerHTML + `<br><h1 class='cat_name'>${folder}</h1><br>`
 
       for (let i in data){
-          let name = data[i].name
-          console.log("name:", name)
-          console.log("url:", data[i].download_url)
-          let articleGrid = document.getElementById("card-deck")
+          let name = data[i].name;
+          console.log("name:", name);
+          console.log("url:", data[i].download_url);
           articleGrid.innerHTML = articleGrid.innerHTML + getHtml(desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at lacus ipsum.",
                                                                   "unknown",
                                                                   name,
-	  							`./a/index.html?a=${folder}/${data[i].name}`);
+	  							                                                `./a/index.html?a=${folder}/${data[i].name}`);
       }
   }
 
@@ -82,14 +65,14 @@ function requestMarkdownCategories(username = "", repo = ""){
   xhr.onload = function() {
 
       // Parse API data into JSON
-      const data = JSON.parse(this.response)
+      const data = JSON.parse(this.response);
 
       // Log the response
-      console.log(data)
+      console.log(data);
 
       for (let i in data){
-          let name = data[i].name
-          console.log("name:", name)
+          let name = data[i].name;
+          console.log("name:", name);
           requestMarkdownArticles("engrafa", "markdown", name);
       }
   }
@@ -98,7 +81,7 @@ function requestMarkdownCategories(username = "", repo = ""){
 
 }
 
-requestMarkdownCategories("engrafa", "markdown")
+requestMarkdownCategories("engrafa", "markdown");
 
 // fetch("https://api.github.com/repos/engrafa/markdown/contents/").then(jsonRaw=>{
 //     // articleJson = JSON.parse(JSON.stringify(jsonRaw.json()));
