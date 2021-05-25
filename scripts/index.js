@@ -1,5 +1,4 @@
 // Grab MD info Json from => https://api.github.com/repos/engrafa/markdown/contents/
-console.log("script built by ACuteWoof lol 🤣");
 
 function getHtml(desc="Lorem ipsum dolor sit amet, consectetur a dipiscing elit. In at lacus ipsum.", author="unknown", title="Lorem Ipsum", onClickUrl=""){
 
@@ -24,7 +23,7 @@ function requestMarkdownArticles(username = "", repo = "", folder=""){
 
   const xhr = new XMLHttpRequest();
   
-  const url = `https://api.github.com/repos/${username}/${repo}/contents/${folder}/`
+  const url = `../markdown/${folder}/`
 
   xhr.open('GET', url, true);
 
@@ -35,9 +34,11 @@ function requestMarkdownArticles(username = "", repo = "", folder=""){
 
       // Log the response
       console.log(data);
-      let articleGrid = document.getElementById("card-deck");
+      let mainGrid = document.getElementById("main-deck");
 
-      articleGrid.innerHTML = articleGrid.innerHTML + `<br><h1 class='cat_name'>${folder}</h1><br>`
+      mainGrid.innerHTML = mainGrid.innerHTML + `<br><h1 class='cat_name'>${folder}</h1><br><section class='card-deck' id='card-deck${folder}'></section>`
+
+      let articleGrid = document.getElementById(`card-deck${folder}`)
 
       for (let i in data){
           let name = data[i].name;
@@ -46,7 +47,7 @@ function requestMarkdownArticles(username = "", repo = "", folder=""){
           articleGrid.innerHTML = articleGrid.innerHTML + getHtml(desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at lacus ipsum.",
                                                                   "unknown",
                                                                   name,
-	  							                                                `./a/index.html?a=${folder}/${data[i].name}`);
+	  							                                                `./a/index.html?a=${folder}/${data[i].name.split(".")[0]}`);
       }
   }
 
