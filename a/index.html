@@ -6,13 +6,12 @@
 
             @import url("../styles/global_fonts.css");
             @import url("../styles/index.css");
-            @import url("../styles/dracula.css");
             @import url("../styles/article.css");
-            @import url("../styles/nord.css");
 
         </style>
 
-	<script src='../scripts/article.js'></script>
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+	<script src="../scripts/article.js" defer></script>
 
         <title>
         Articles - Engrafa
@@ -21,22 +20,25 @@
     <body>
 
         <div class="navbar">
-        <nav>
-            <input id="nav-toggle" type="checkbox">
-            <div class="logo">Engrafa</div>
-            <ul class="links">
-                <li><a class='nav-a' href="#home">Home</a></li>
-                <li><a class='nav-a' href="./a/?a=Meta/About us.md">About</a></li>
-                <li><a class='nav-a' href="https://github.com/engrafa">Github</a></li>
-                <li><a class='nav-a' href="./a/?a=Meta/Contributing.md">Contribute</a></li>
-            </ul>
-            <label for="nav-toggle" class="icon-burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </label>
-        </nav>
-        </div>
+            <nav>
+              <input id="nav-toggle" type="checkbox">
+              <div class="logo"><img class='logo-img' src="../Images/logo.png" style="margin-right: 10px;">
+                <a href="#">Engrafa</h1>
+              </div>
+              <ul class="links">
+                  <li><a href="#home">Home</a></li>
+                    <li><a href="./a/?a=Meta/About us.md">About</a></li>
+                  <li><a href="../Our Team">Our Team</a></li>
+                  <li><a href="https://github.com/engrafa">Github</a></li>
+                    <li><a href="./a/?a=Meta/Contributing.md">Contribute</a></li>
+              </ul>
+              <label for="nav-toggle" class="icon-burger">
+                  <div class="line"></div>
+                  <div class="line"></div>
+                  <div class="line"></div>
+              </label>
+          </nav>
+          </div>
 	  
 
         <div id="content" class="md_viewer">

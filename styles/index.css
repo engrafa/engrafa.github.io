@@ -1,6 +1,4 @@
-@import url("nord.css");
-
-@font-face {
+font-face {
     font-family: "RobotoThin";
     src: url("https://engrafa.github.io/Fonts/Roboto/Roboto-Thin.ttf");
 }
@@ -57,6 +55,10 @@ header{
     top: 0px;
 }
 
+pre{
+	padding: 5px 10px;
+}
+
 .articles_intro{
     margin: 1em;
     color:#9DEFFF;
@@ -70,7 +72,7 @@ header{
 }
 
 .cat_name{
-	margin-top: 1em;
+	margin-top: 2em;
 }
 
 a {
@@ -79,25 +81,11 @@ a {
 }
 
 a:hover{
-    color: #bf616a;
+    color: #81a1c1;
     text-decoration: none;
 }
 
 a:active{
-    color: #d8dee9;
-}
-
-.nav-a {
-    color: #eceff4;
-    text-decoration:none;
-}
-
-.nav-a {
-    color: #bf616a;
-    text-decoration: none;
-}
-
-.nav-a {
     color: #d8dee9;
 }
 
@@ -126,18 +114,12 @@ nav {
 	right: 0;
 	top: 0;
 	font-family: 'Montserrat', sans-serif;
-<<<<<<< HEAD
-<<<<<<< HEAD
 	padding: 0 1.5%;
 	height: 50px;
-=======
 	padding: 0 5%;
 	height: 60px;
->>>>>>> df4bd13da495e07ec85f247808395154ff4c216a
-=======
-	padding: 0 5%;
+	padding: 0 20px;
 	height: 60px;
->>>>>>> df4bd13da495e07ec85f247808395154ff4c216a
 	background-color: #4c566a;
 	margin-bottom: 1em;
 }
@@ -154,7 +136,7 @@ nav .links {
 	float: right;
 	padding: 0;
 	margin: 0;
-	width: 25%;
+	width: 30%;
 	height: 100%;
 	display: flex;
 	justify-content: space-around;
@@ -195,8 +177,12 @@ nav .icon-burger .line {
 	height: 60px;
 }
 
+li a{
+	transform: all 300ms;
+}
+
 li a:hover{
-    color: #bf616a;
+    color:#88c0d0;
     text-decoration: none;
 }
 

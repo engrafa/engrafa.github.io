@@ -42,7 +42,7 @@ html{
     word-wrap: break-word;
     /* box-shadow: 0rem 0rem 0.3rem rgba(0,0,0,1); */
     cursor: pointer;
-    transition: 0.2s;
+    transition: all 500ms;
 }
 
 .card-item:hover{

@@ -50,7 +50,7 @@ function requestMarkdownArticles(username = "", repo = "", folder=""){
           articleGrid.innerHTML = articleGrid.innerHTML + getHtml(desc=desc,
                                                                   author,
                                                                    name,
-		  						  `./a/index.html?a=${data[i].name}`);
+		  						  `./a/index.html?a=${folder}/${data[i].file}`);
       }
   }
 
