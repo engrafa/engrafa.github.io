@@ -28,3 +28,23 @@
 	font-family: "Lovelo";
 	src: url("../Fonts/lovelo/Lovelo-Black.otf");
 }
+
+@font-face{
+	font-family: "Arvo";
+	src: url("../Fonts/Arvo/Arvo-Regular.ttf");
+}
+
+@font-face{
+	font-family: "Arvo Bold";
+	src: url("../Fonts/Arvo/Arvo-Bold.ttf");
+}
+
+@font-face{
+	font-family: "Arvo Italic";
+	src: url("../Fonts/Arvo/Arvo-Italic.ttf");
+}
+
+@font-face{
+	font-family: "Arvo Bold Italic";
+	src: url("../Fonts/Arvo/Arvo-BoldItalic.ttf");
+}

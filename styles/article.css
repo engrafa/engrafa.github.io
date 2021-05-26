@@ -1,7 +1,7 @@
 @import url("./global_fonts.css");
 
 html{
-    font-family: "Roboto"
+    font-family: "Arvo"
 }
 
 a {
@@ -76,11 +76,12 @@ body{
     /* line-height: 2em; */
     background-color: #3b4252;
     color: #eceff4;
+    font-family: "Arvo";
 }
 
 h1{
     font-size: 2.5em;
-    font-family: "Roboto Bold";
+    font-family: "Arvo Bold";
     text-align: center;
     margin: 1em;
     color: #88c0d0;
@@ -91,7 +92,7 @@ h3,
 h4,
 h5,
 h6{
-    font-family: "Roboto Medium";
+    font-family: "Arvo Bold Italic";
     text-align: justify;
 }
 
