@@ -23,7 +23,7 @@ function requestMarkdownArticles(username = "", repo = "", folder=""){
 
   const xhr = new XMLHttpRequest();
   
-  const url = `../markdown/${folder}/`
+  const url = `https://raw.githubusercontent.com/engrafa/markdown/main/${folder}/articles.json`
 
   xhr.open('GET', url, true);
 
@@ -42,12 +42,15 @@ function requestMarkdownArticles(username = "", repo = "", folder=""){
 
       for (let i in data){
           let name = data[i].name;
+	  let desc = data[i].desc;
+	  let author = data[i].author;
           console.log("name:", name);
-          console.log("url:", data[i].download_url);
-          articleGrid.innerHTML = articleGrid.innerHTML + getHtml(desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at lacus ipsum.",
-                                                                  "unknown",
-                                                                  name,
-	  							                                                `./a/index.html?a=${folder}/${data[i].name.split(".")[0]}`);
+          console.log("name:", desc);
+	  console.log("name:", author);
+          articleGrid.innerHTML = articleGrid.innerHTML + getHtml(desc=desc,
+                                                                  author,
+                                                                   name,
+		  						  `./a/index.html?a=${data[i].name}`);
       }
   }
 
@@ -59,20 +62,22 @@ function requestMarkdownCategories(username = "", repo = ""){
 
   const xhr = new XMLHttpRequest();
   
-  const url = `https://api.github.com/repos/${username}/${repo}/contents/`
+  const url = `https://raw.githubusercontent.com/engrafa/markdown/main/files.json`
 
   xhr.open('GET', url, true);
 
   xhr.onload = function() {
 
       // Parse API data into JSON
-      const data = JSON.parse(this.response);
+      let data = JSON.parse(this.response);
 
       // Log the response
       console.log(data);
 
+      data = data["folders"]
+
       for (let i in data){
-          let name = data[i].name;
+          let name = data[i];
           console.log("name:", name);
           requestMarkdownArticles("engrafa", "markdown", name);
       }
