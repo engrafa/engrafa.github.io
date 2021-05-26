@@ -87,7 +87,10 @@ h1{
     color: #88c0d0;
 }
 
-h2,
+h2{
+    font-family: "Arvo Bold"
+}
+
 h3,
 h4,
 h5,
