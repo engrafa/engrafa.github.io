@@ -1,43 +1,35 @@
-@font-face {
-    font-family: "RobotoThin";
-    src: url("https://engrafa.github.io/Fonts/Roboto/Roboto-Thin.ttf");
-}
-
-@font-face {
-    font-family: "Roboto";
-    src: url("https://engrafa.github.io/Fonts/Roboto/Roboto-Regular.ttf");
-}
-
-@font-face {
-    font-family: "RobotoLight";
-    src: url("https://engrafa.github.io/Fonts/Roboto/Roboto-Light.ttf");
-}
-
+@import url("../styles/global_fonts.css");
 
 body{
-    background: #1B1D27;
+    /* background: #1B1D27; */
     text-align: center;
-    font-family: "RobotoThin"
+    font-family: "Arvo";
+    color: #d8dee9;
+}
+
+h1{
+    color: #5e81ac;
+    font-family: "Arvo Bold";
 }
 
 h4{
-    font-family: 'RobotoLight';
+    font-family: 'Arvo Bold';
 }
 
 p{
-    font-family: 'RobotoLight';
+    font-family: 'Arvo';
 }
 
 .container{
     margin: 20px 40px;
-    color: #9defff;
+    /* color: #9defff; */
 }
 
 .heading{
     padding: 20px;
     padding-bottom: 40px;
     font-size: 60px;
-    color:#9defff;
+    /* color:#9defff; */
 }
 
 .lol{
@@ -63,7 +55,7 @@ p{
     height: 20em;
     width: 20em;
     border-radius: 50%;
-    filter: grayscale(50%);
+    filter: grayscale(20%);
     cursor: pointer;
 }
 .profile:hover .profile-img {
@@ -73,6 +65,7 @@ p{
 }
 
 .user-name{
+    color: #81a1c1;
     margin-top: 30px;
     font-size: 35px;
 }
@@ -80,7 +73,7 @@ p{
     font-size: 18 px;
     font-weight: 100;
     letter-spacing: 3px;
-    color: #9defff;
+    /* color: #9defff; */
 }
 .profile p{
     font-size: 1.25em;
@@ -107,7 +100,7 @@ p{
 @media only screen and (max-width: 900px) {
     .heading{
         font-size: 40px;
-        color: #9defff;
+        /* color: #9defff; */
         text-align: center;
     }
     .heading span{
