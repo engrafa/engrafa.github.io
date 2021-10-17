@@ -84,6 +84,8 @@ a {
 
 a:hover {
     color: var(--text-color-hover);
+    transition: 1s ease-in-out;
+    border-bottom: 1px solid var(--text-color-hover);
     text-decoration: none;
 }
 
