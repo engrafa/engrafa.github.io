@@ -1,43 +1,45 @@
 @import url("./global_fonts.css");
+@import url("./themes.css");
 
-html{
-    font-family: "Arvo"
+html {
+    font-family: "Arvo";
 }
 
 a {
-    color: #bcd9df;
+    color: var(--text-color-nav);
 }
 
-a :active{
-    color: #6b898f;
+a :active {
+    color: var(--text-color-active);
 }
 
-header{
+header {
     text-align: center;
     padding: 0.1em;
 }
 
-pre{
-    border: 1px solid #b48ead;
-    background-color: #2e3440;
+pre {
+    border: 1px solid var(--text-color-hover);
+    /* background-color: #2e3440; */
+    background-color: var(--header-background-color);
     border-radius: 5px;
 }
 
-body{
+body {
     text-align: justify;
 }
 
-.head{
+.head {
     font-size: 0.5em;
 }
 
-.headt{
+.headt {
     margin: auto;
     text-align: center;
     font-size: 2em;
 }
 
-.md_viewer{
+.md_viewer {
     margin-top: 3em;
     border-radius: 5px;
     /* background-color: #282a36;
@@ -49,11 +51,11 @@ body{
     padding: 2%;
 }
 
-p{
+p {
     text-align: justify;
 }
 
-.contributors{
+.contributors {
     border-radius: 5px;
     /* background-color: #282a36;
     color: #f8f8f2; */
@@ -64,78 +66,78 @@ p{
     padding: 2%;
 }
 
-blockquote{
-    border-left: 3px solid #88c0d0;
+blockquote {
+    border-left: 3px solid var(--text-color-hover);
     padding: 0 0 0 20px;
     font-style: italic;
     margin: 0;
 }
 
-body{
+body {
     word-wrap: break-word;
     /* line-height: 2em; */
-    background-color: #3b4252;
-    color: #eceff4;
+    background-color: var(--background-color);
+    color: var(--text-color-nav);
     font-family: "Arvo";
 }
 
-h1{
+h1 {
     font-size: 2.5em;
     font-family: "Arvo Bold";
     text-align: center;
     margin: 1em;
-    color: #88c0d0;
+    color: var(--articles-intro);
 }
 
-h2{
-    font-family: "Arvo Bold"
+h2 {
+    font-family: "Arvo Bold";
 }
 
 h3,
 h4,
 h5,
-h6{
+h6 {
     font-family: "Arvo Bold Italic";
     text-align: justify;
 }
 
-h2{
+h2 {
     font-size: 2em;
     /* font-family: "FiraSans-Black"; */
     margin: 0.3em;
-    margin-left:auto;
-    color: #81a1c1
+    margin-left: auto;
+    color: var(--text-color-hover);
 }
 
-h3{
+h3 {
     margin-bottom: 0.5em;
     margin-top: 1em;
     font-size: 2em;
-    color: #8fbcbb;
+    color: var(--team-heading);
     /* font-family: "FiraSans-ExtraBold"; */
 }
 
 h4,
 h5,
-h6{
+h6 {
     margin-bottom: 1em;
     margin-top: 0.5em;
     margin: auto;
     font-size: 1.5em;
-    color: #5e81ac;
+    color: var(--team-heading);
     /* font-family: "FiraSans-Bold"; */
 }
 
-strong{
+strong {
     font-size: 1em;
     /* font-family: "FiraSans-Medium"; */
 }
 
-pre code{
-    background: #2e3440
+pre code {
+    background: var(--background-color);
 }
 
-code{
+code {
     font-family: "FiraCode";
 }
 
@@ -150,22 +152,21 @@ code{
     color: #f8f8f2;
 } */
 
-@media only screen and (max-width: 1000px){
-
-    h1{
+@media only screen and (max-width: 1000px) {
+    h1 {
         font-size: 2em;
-        margin: 1em
+        margin: 1em;
         /* line-height: 90px; */
     }
 
-    h2{
+    h2 {
         font-size: 1.3em;
     }
 
     h3,
     h4,
     h5,
-    h6{
+    h6 {
         font-size: 1em;
     }
 
@@ -173,23 +174,22 @@ code{
     h3,
     h4,
     h5,
-    h6{
+    h6 {
         text-align: left;
         line-height: 100px;
     }
 
-    .headt{
+    .headt {
         text-align: center;
         font-size: 2em;
     }
 
-    body{
+    body {
         font-size: 2em;
-        word-wrap:normal;
+        word-wrap: normal;
     }
 
-    code{
+    code {
         font-size: 0.9em;
     }
-
 }

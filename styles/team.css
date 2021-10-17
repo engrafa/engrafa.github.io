@@ -1,66 +1,68 @@
 @import url("../styles/global_fonts.css");
+@import url("./themes.css");
 
-body{
+body {
     /* background: #1B1D27; */
     text-align: center;
     font-family: "Arvo";
-    color: #d8dee9;
+    color: var(--text-color-active);
+    overflow: hidden;
 }
 
-h1{
-    color: #5e81ac;
+h1 {
+    color: var(--text-color-active);
     font-family: "Arvo Bold";
 }
 
-h4{
-    font-family: 'Arvo Bold';
+h4 {
+    font-family: "Arvo Bold";
 }
 
-p{
-    font-family: 'Arvo';
+p {
+    font-family: "Arvo";
 }
 
-.container{
+.container {
     margin: 20px 40px;
     /* color: #9defff; */
 }
 
-.heading{
+.heading {
     padding: 20px;
     padding-bottom: 40px;
     font-size: 60px;
+    color: var(--text-color-active);
     /* color:#9defff; */
 }
 
-.lol{
-    padding-top:80px;
+.lol {
+    padding-top: 80px;
 }
 
-.lmao{
-    padding-top:80px;
+.lmao {
+    padding-top: 80px;
 }
 
-.smae{
-    padding-top:80px;
-    padding-bottom:60px;
+.smae {
+    padding-top: 80px;
+    padding-bottom: 60px;
 }
 
-.profiles{
+.profiles {
     display: flex;
     justify-content: space-around;
     margin: 20px 80px;
 }
-.profile{
+.profile {
     flex-basis: 270px;
     font-size: 13px;
     transition: font-size 400ms;
 }
 .profile:hover {
-    font-size: 15px;    
+    font-size: 15px;
 }
 
-
-.profile .profile-img{
+.profile .profile-img {
     height: 20em;
     width: 20em;
     border-radius: 50%;
@@ -73,33 +75,33 @@ p{
     width: 19em;
 }
 
-.user-name{
-    color: #81a1c1;
+.user-name {
+    color: var(--text-color-hover);
     margin-top: 30px;
     font-size: 35px;
 }
-.profile h4{
+.profile h4 {
     font-size: 18 px;
     font-weight: 100;
     letter-spacing: 3px;
     /* color: #9defff; */
 }
-.profile p{
+.profile p {
     font-size: 1.25em;
     margin-top: 2em;
     text-align: justify;
 }
 
 @media only screen and (max-width: 1150px) {
-    .profiles{
+    .profiles {
         flex-direction: column;
     }
-    .profile{
+    .profile {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .profile p{
+    .profile p {
         text-align: center;
         margin: 20px 60px 80px 60px;
         font-size: 20px;
@@ -107,18 +109,18 @@ p{
 }
 
 @media only screen and (max-width: 900px) {
-    .heading{
+    .heading {
         font-size: 40px;
         /* color: #9defff; */
         text-align: center;
     }
-    .heading span{
+    .heading span {
         font-size: 15px;
     }
-    .profiles{
+    .profiles {
         margin: 20px 0;
     }
-    .profile p{
+    .profile p {
         margin: 20px 10px 80px 10px;
     }
 }

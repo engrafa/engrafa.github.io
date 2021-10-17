@@ -1,0 +1,21 @@
+body {
+    --header-background-color: #1b1c27;
+    --background-color: #2e3440;
+    --nav-background: #4c566a;
+    --text-color-nav: #eceff4;
+    --text-color-hover: #81a1c1;
+    --text-color-active: #d8dee9;
+    --articles-intro: #9defff;
+    --team-heading: #5e81ac;
+}
+
+body.dracula {
+    --header-background-color: #282a36;
+    --background-color: #282a36;
+    --nav-background: #44475a;
+    --text-color-nav: #f8f8f2;
+    --text-color-hover: #8be9fd;
+    --text-color-active: #50fa7b;
+    --articles-intro: #bd93f9;
+    --team-heading: #ff5555;
+}
