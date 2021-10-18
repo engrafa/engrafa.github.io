@@ -77,6 +77,14 @@ pre {
     margin-top: 2em;
 }
 
+.themeIcon {
+    fill: var(--text-color-nav);
+}
+.themeIcon:hover {
+    fill: var(--text-color-hover);
+    transition: 1s ease-in-out;
+    text-decoration: none;
+}
 a {
     color: var(--text-color-nav);
     text-decoration: none;
