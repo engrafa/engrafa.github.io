@@ -77,7 +77,7 @@ body {
     word-wrap: break-word;
     /* line-height: 2em; */
     background-color: var(--background-color);
-    color: var(--text-color-nav);
+    color: var(--foreground);
     font-family: "Arvo";
 }
 
