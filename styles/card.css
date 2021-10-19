@@ -7,9 +7,9 @@ body {
     /* --bg: #4c566a; */
     --bg: var(--nav-background);
     /* --main-fg: #eceff4; */
-    --main-fg: var(--text-color-nav);
+    --main-fg: var(--articles-intro);
     /* --fg: #e5e9f0; */
-    --fg: var(--main-fg);
+    --fg: var(--foreground);
     --fg1: var(--main-fg);
 }
 * {
