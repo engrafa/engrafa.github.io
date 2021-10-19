@@ -1,0 +1,70 @@
+@import url("../styles/global_fonts.css");
+@import url("../styles/themes.css");
+body {
+    background-color: var(--background-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.theme_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dracula_theme,
+.default {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    border-radius: 10px;
+    transition: 1s;
+}
+.engrafa_logo {
+    width: 100px;
+    height: 100px;
+    padding: 40px 40px 40px 40px;
+}
+
+.dracula_theme {
+    background-color: #282a36;
+    margin-right: 50px;
+    border: 3px solid #bd93f9;
+}
+
+.dracula_theme:hover,
+.default:hover {
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.dracula_theme h2 {
+    color: #ff79c6;
+    padding: 0px 40px 0 0;
+}
+.dracula_theme h2 span {
+    color: #50fa7b;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 15px;
+}
+
+.default {
+    background-color: #2e3440;
+    border: 3px solid #9defff;
+}
+
+.default h2 {
+    color: #eceff4;
+    padding: 0px 40px 0 0;
+}
+
+.default h2 span {
+    color: #d8dee9;
+    font-size: 0.8rem;
+    text-align: center;
+    padding: 15px;
+}
