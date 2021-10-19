@@ -6,7 +6,6 @@ body {
     text-align: center;
     font-family: "Arvo";
     color: var(--text-color-active);
-    overflow: hidden;
 }
 
 h1 {
